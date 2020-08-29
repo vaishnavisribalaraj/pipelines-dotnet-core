@@ -6,8 +6,16 @@
 trigger:
 - master
 
+strategy:
+  matrix:
+    ubuntu:
+      imagename: 'ubuntu-latest'
+    mac:
+      imagename: 'mac-latest'
+
+
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: $(imagename)
 
 variables:
   buildConfiguration: 'Release'
