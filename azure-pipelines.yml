@@ -11,7 +11,7 @@ strategy:
     ubuntu:
       imagename: 'ubuntu-latest'
     mac:
-      imagename: 'mac-latest'
+      imagename: 'macos-latest'
 
 
 pool:
